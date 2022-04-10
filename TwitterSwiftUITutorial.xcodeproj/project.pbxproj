@@ -10,6 +10,8 @@
 		AD204D702802E6B4008FD468 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD204D6F2802E6B4008FD468 /* SearchView.swift */; };
 		AD204D722802E718008FD468 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD204D712802E718008FD468 /* SearchBar.swift */; };
 		AD204D74280300C2008FD468 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD204D73280300C2008FD468 /* UserCell.swift */; };
+		AD204D7728030C54008FD468 /* ConversationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD204D7628030C54008FD468 /* ConversationsView.swift */; };
+		AD204D7928030C71008FD468 /* ConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD204D7828030C71008FD468 /* ConversationCell.swift */; };
 		ADF6FAF228027029007D11B8 /* TwitterSwiftUITutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF6FAF128027029007D11B8 /* TwitterSwiftUITutorialApp.swift */; };
 		ADF6FAF428027029007D11B8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF6FAF328027029007D11B8 /* ContentView.swift */; };
 		ADF6FAF62802702A007D11B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADF6FAF52802702A007D11B8 /* Assets.xcassets */; };
@@ -22,6 +24,8 @@
 		AD204D6F2802E6B4008FD468 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		AD204D712802E718008FD468 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		AD204D73280300C2008FD468 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		AD204D7628030C54008FD468 /* ConversationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsView.swift; sourceTree = "<group>"; };
+		AD204D7828030C71008FD468 /* ConversationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationCell.swift; sourceTree = "<group>"; };
 		ADF6FAEE28027029007D11B8 /* TwitterSwiftUITutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterSwiftUITutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADF6FAF128027029007D11B8 /* TwitterSwiftUITutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterSwiftUITutorialApp.swift; sourceTree = "<group>"; };
 		ADF6FAF328027029007D11B8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,6 +46,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD204D7528030C42008FD468 /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				AD204D7628030C54008FD468 /* ConversationsView.swift */,
+				AD204D7828030C71008FD468 /* ConversationCell.swift */,
+			);
+			path = Messages;
+			sourceTree = "<group>";
+		};
 		ADF6FAE528027029007D11B8 = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +95,7 @@
 		ADF6FB0A280286F0007D11B8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AD204D7528030C42008FD468 /* Messages */,
 				ADF6FAF328027029007D11B8 /* ContentView.swift */,
 				ADF6FB0D2802874F007D11B8 /* FeedView.swift */,
 				ADF6FB0F28028992007D11B8 /* TweetCell.swift */,
@@ -179,10 +193,12 @@
 				AD204D702802E6B4008FD468 /* SearchView.swift in Sources */,
 				ADF6FAF428027029007D11B8 /* ContentView.swift in Sources */,
 				ADF6FB0E2802874F007D11B8 /* FeedView.swift in Sources */,
+				AD204D7728030C54008FD468 /* ConversationsView.swift in Sources */,
 				ADF6FAF228027029007D11B8 /* TwitterSwiftUITutorialApp.swift in Sources */,
 				ADF6FB1028028992007D11B8 /* TweetCell.swift in Sources */,
 				AD204D722802E718008FD468 /* SearchBar.swift in Sources */,
 				AD204D74280300C2008FD468 /* UserCell.swift in Sources */,
+				AD204D7928030C71008FD468 /* ConversationCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

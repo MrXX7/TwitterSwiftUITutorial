@@ -1,5 +1,5 @@
 //
-//  FeedView.swift
+//  ConversationsView.swift
 //  TwitterSwiftUITutorial
 //
 //  Created by Oncu Ohancan on 10.04.2022.
@@ -7,20 +7,20 @@
 
 import SwiftUI
 
-struct FeedView: View {
+struct ConversationsView: View {
     var body: some View {
         ZStack(alignment: .bottomTrailing) {
             ScrollView {
                 VStack {
                     ForEach(0..<9) { _ in
-                        TweetCell()
+                        ConversationCell()
                     }
                 } .padding()
             }
             Button(action: {}, label: {
-            Image("Tweet")
+                Image(systemName: "envelope")
                 .resizable()
-                .renderingMode(.template)
+                .scaledToFit()
                 .frame(width: 32, height: 32)
                 .padding()
         })
@@ -30,9 +30,9 @@ struct FeedView: View {
         .padding()
     }
 }
-                   }
-struct FeedView_Previews: PreviewProvider {
+}
+struct ConversationsView_Previews: PreviewProvider {
     static var previews: some View {
-        FeedView()
+        ConversationsView()
     }
 }
