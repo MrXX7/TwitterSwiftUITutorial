@@ -13,6 +13,7 @@
 		AD204D7728030C54008FD468 /* ConversationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD204D7628030C54008FD468 /* ConversationsView.swift */; };
 		AD204D7928030C71008FD468 /* ConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD204D7828030C71008FD468 /* ConversationCell.swift */; };
 		AD2A944E2804490C00B509FD /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2A944D2804490C00B509FD /* Message.swift */; };
+		AD35B5DF280456A50089B9F8 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD35B5DE280456A50089B9F8 /* MessageView.swift */; };
 		AD3C85002803A02D00FA8429 /* MessageInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3C84FF2803A02D00FA8429 /* MessageInputView.swift */; };
 		AD3C85022803A3C500FA8429 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3C85012803A3C500FA8429 /* ChatView.swift */; };
 		AD45D05A2804122D00BC0860 /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD45D0592804122D00BC0860 /* ChatBubble.swift */; };
@@ -31,6 +32,7 @@
 		AD204D7628030C54008FD468 /* ConversationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsView.swift; sourceTree = "<group>"; };
 		AD204D7828030C71008FD468 /* ConversationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationCell.swift; sourceTree = "<group>"; };
 		AD2A944D2804490C00B509FD /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		AD35B5DE280456A50089B9F8 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		AD3C84FF2803A02D00FA8429 /* MessageInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageInputView.swift; sourceTree = "<group>"; };
 		AD3C85012803A3C500FA8429 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		AD45D0592804122D00BC0860 /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				AD3C84FF2803A02D00FA8429 /* MessageInputView.swift */,
 				AD3C85012803A3C500FA8429 /* ChatView.swift */,
 				AD45D0592804122D00BC0860 /* ChatBubble.swift */,
+				AD35B5DE280456A50089B9F8 /* MessageView.swift */,
 			);
 			path = Messages;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 				AD2A944E2804490C00B509FD /* Message.swift in Sources */,
 				AD204D722802E718008FD468 /* SearchBar.swift in Sources */,
 				AD204D74280300C2008FD468 /* UserCell.swift in Sources */,
+				AD35B5DF280456A50089B9F8 /* MessageView.swift in Sources */,
 				AD204D7928030C71008FD468 /* ConversationCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
