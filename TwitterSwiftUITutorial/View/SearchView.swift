@@ -18,7 +18,10 @@ struct SearchView: View {
                 ForEach(0..<19) { _ in
                     HStack {
                         Spacer()}
-                    UserCell()
+                    NavigationLink(destination: UserProfileView(),
+                                   label: {
+                        UserCell()
+                    })
                 }
             }.padding(.leading)
 }
