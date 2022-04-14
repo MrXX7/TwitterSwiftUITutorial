@@ -26,6 +26,7 @@
 		AD7E64592805A3BF002B5F42 /* FilterButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7E64582805A3BF002B5F42 /* FilterButtonView.swift */; };
 		AD81EC3E2807989C00A8B2F9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD81EC3D2807989C00A8B2F9 /* LoginView.swift */; };
 		AD81EC40280798C000A8B2F9 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD81EC3F280798C000A8B2F9 /* RegistrationView.swift */; };
+		AD8CDDE328080BB200C2B8C4 /* CustomSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8CDDE228080BB200C2B8C4 /* CustomSecureField.swift */; };
 		ADED0BDE2807A008004F40B1 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADED0BDD2807A008004F40B1 /* CustomTextField.swift */; };
 		ADF6FAF228027029007D11B8 /* TwitterSwiftUITutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF6FAF128027029007D11B8 /* TwitterSwiftUITutorialApp.swift */; };
 		ADF6FAF428027029007D11B8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF6FAF328027029007D11B8 /* ContentView.swift */; };
@@ -55,6 +56,7 @@
 		AD7E64582805A3BF002B5F42 /* FilterButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterButtonView.swift; sourceTree = "<group>"; };
 		AD81EC3D2807989C00A8B2F9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		AD81EC3F280798C000A8B2F9 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		AD8CDDE228080BB200C2B8C4 /* CustomSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSecureField.swift; sourceTree = "<group>"; };
 		ADED0BDD2807A008004F40B1 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		ADF6FAEE28027029007D11B8 /* TwitterSwiftUITutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterSwiftUITutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADF6FAF128027029007D11B8 /* TwitterSwiftUITutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterSwiftUITutorialApp.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			children = (
 				AD1EE7FB28072C1F00A3F151 /* TextArea.swift */,
 				ADED0BDD2807A008004F40B1 /* CustomTextField.swift */,
+				AD8CDDE228080BB200C2B8C4 /* CustomSecureField.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 				AD7E64572805A39B002B5F42 /* ProfileActionButtonView.swift in Sources */,
 				ADED0BDE2807A008004F40B1 /* CustomTextField.swift in Sources */,
 				AD204D74280300C2008FD468 /* UserCell.swift in Sources */,
+				AD8CDDE328080BB200C2B8C4 /* CustomSecureField.swift in Sources */,
 				AD35B5DF280456A50089B9F8 /* MessageView.swift in Sources */,
 				AD204D7928030C71008FD468 /* ConversationCell.swift in Sources */,
 			);
