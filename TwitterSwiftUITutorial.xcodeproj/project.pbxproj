@@ -16,10 +16,10 @@
 		AD204D7928030C71008FD468 /* ConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD204D7828030C71008FD468 /* ConversationCell.swift */; };
 		AD2A944E2804490C00B509FD /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2A944D2804490C00B509FD /* Message.swift */; };
 		AD35B5DF280456A50089B9F8 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD35B5DE280456A50089B9F8 /* MessageView.swift */; };
+		AD37199D280C459200510A69 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD37199C280C459200510A69 /* GoogleService-Info.plist */; };
 		AD3C85002803A02D00FA8429 /* MessageInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3C84FF2803A02D00FA8429 /* MessageInputView.swift */; };
 		AD3C85022803A3C500FA8429 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3C85012803A3C500FA8429 /* ChatView.swift */; };
 		AD45D05A2804122D00BC0860 /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD45D0592804122D00BC0860 /* ChatBubble.swift */; };
-		AD4BE9402809901D009B7101 /* GoogleService-Info-plist.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD4BE93F2809901D009B7101 /* GoogleService-Info-plist.plist */; };
 		AD6AF17D28046CB0002B91DC /* NewMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6AF17C28046CB0002B91DC /* NewMessageView.swift */; };
 		AD73719E280962EF00CC8474 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD73719D280962EF00CC8474 /* AuthViewModel.swift */; };
 		AD7E64532805A156002B5F42 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7E64522805A156002B5F42 /* UserProfileView.swift */; };
@@ -53,10 +53,10 @@
 		AD204D7828030C71008FD468 /* ConversationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationCell.swift; sourceTree = "<group>"; };
 		AD2A944D2804490C00B509FD /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		AD35B5DE280456A50089B9F8 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		AD37199C280C459200510A69 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AD3C84FF2803A02D00FA8429 /* MessageInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageInputView.swift; sourceTree = "<group>"; };
 		AD3C85012803A3C500FA8429 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		AD45D0592804122D00BC0860 /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
-		AD4BE93F2809901D009B7101 /* GoogleService-Info-plist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-plist.plist"; sourceTree = "<group>"; };
 		AD6AF17C28046CB0002B91DC /* NewMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageView.swift; sourceTree = "<group>"; };
 		AD73719D280962EF00CC8474 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		AD7E64522805A156002B5F42 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
@@ -172,9 +172,9 @@
 		ADF6FAF028027029007D11B8 /* TwitterSwiftUITutorial */ = {
 			isa = PBXGroup;
 			children = (
+				AD37199C280C459200510A69 /* GoogleService-Info.plist */,
 				ADF6FAF52802702A007D11B8 /* Assets.xcassets */,
 				ADF6FAF128027029007D11B8 /* TwitterSwiftUITutorialApp.swift */,
-				AD4BE93F2809901D009B7101 /* GoogleService-Info-plist.plist */,
 				AD1EE7F928072B8500A3F151 /* Utills */,
 				ADF6FB0A280286F0007D11B8 /* View */,
 				ADF6FB0C28028707007D11B8 /* ViewModels */,
@@ -294,7 +294,7 @@
 			files = (
 				ADF6FAF92802702A007D11B8 /* Preview Assets.xcassets in Resources */,
 				ADF6FAF62802702A007D11B8 /* Assets.xcassets in Resources */,
-				AD4BE9402809901D009B7101 /* GoogleService-Info-plist.plist in Resources */,
+				AD37199D280C459200510A69 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

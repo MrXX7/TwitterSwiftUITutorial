@@ -19,7 +19,7 @@ struct UserProfileView: View {
     var body: some View {
         ScrollView {
             VStack {
-                Text("merhaba")
+                Text("user profile")
 //                ProfileHeaderView(viewModel: viewModel)
 //                    .padding()
 //
