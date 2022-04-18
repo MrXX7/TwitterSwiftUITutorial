@@ -8,28 +8,36 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @EnvironmentObject var viewModel: AuthViewModel
     var body: some View {
-        NavigationView {
-            TabView {
-                FeedView()
-                    .tabItem {
-                        Text("Home")
-                        Image(systemName: "house")
-                    }
-                SearchView()
-                    .tabItem {
-                        Text("Search")
-                        Image(systemName: "magnifyingglass")
-                    }
-                ConversationsView()
+        Group {
+            if viewModel.userSession != nil {
+                NavigationView {
+                    TabView {
+                        FeedView()
                             .tabItem {
-                                Text("Messages")
-                                Image(systemName: "envelope")
+                                Text("Home")
+                                Image(systemName: "house")
+                            }
+                        SearchView()
+                            .tabItem {
+                                Text("Search")
+                                Image(systemName: "magnifyingglass")
+                            }
+                        ConversationsView()
+                                    .tabItem {
+                                        Text("Messages")
+                                        Image(systemName: "envelope")
+                    }
+                                    .navigationBarTitle("Home")
+                                    .navigationBarTitleDisplayMode(.inline)
             }
-                            .navigationBarTitle("Home")
-                            .navigationBarTitleDisplayMode(.inline)
-    }
-}
+        }
+            } else {
+                LoginView()
+            }
+        }
     }
 }
 
