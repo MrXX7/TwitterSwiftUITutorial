@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD032B88280EABEC00AA6F60 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD032B87280EABEC00AA6F60 /* User.swift */; };
 		AD1EE7F828071BE000A3F151 /* NewTweetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1EE7F728071BE000A3F151 /* NewTweetView.swift */; };
 		AD1EE7FC28072C1F00A3F151 /* TextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1EE7FB28072C1F00A3F151 /* TextArea.swift */; };
 		AD204D702802E6B4008FD468 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD204D6F2802E6B4008FD468 /* SearchView.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD032B87280EABEC00AA6F60 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		AD1EE7F728071BE000A3F151 /* NewTweetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTweetView.swift; sourceTree = "<group>"; };
 		AD1EE7FB28072C1F00A3F151 /* TextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextArea.swift; sourceTree = "<group>"; };
 		AD204D6F2802E6B4008FD468 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				AD2A944D2804490C00B509FD /* Message.swift */,
+				AD032B87280EABEC00AA6F60 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				AD73719E280962EF00CC8474 /* AuthViewModel.swift in Sources */,
 				AD2A944E2804490C00B509FD /* Message.swift in Sources */,
 				AD7E64532805A156002B5F42 /* UserProfileView.swift in Sources */,
+				AD032B88280EABEC00AA6F60 /* User.swift in Sources */,
 				AD204D722802E718008FD468 /* SearchBar.swift in Sources */,
 				AD7E64572805A39B002B5F42 /* ProfileActionButtonView.swift in Sources */,
 				ADED0BDE2807A008004F40B1 /* CustomTextField.swift in Sources */,
