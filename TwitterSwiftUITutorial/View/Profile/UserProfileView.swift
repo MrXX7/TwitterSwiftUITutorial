@@ -8,37 +8,20 @@
 import SwiftUI
 
 struct UserProfileView: View {
-//    let user: User
-//    @ObservedObject var viewModel: ProfileViewModel
-//    @State var selectedFilter: TweetFilterOptions = .tweets
-//init(user: User) {
-//    self.user = user
-//    self.viewModel = ProfileViewModel(user: user)
-//}
-    
+
+    let user: User
     var body: some View {
         ScrollView {
             VStack {
-                Text("user profile")
-//                ProfileHeaderView(viewModel: viewModel)
-//                    .padding()
-//
-//                FilterButtonView(selectedOption: $selectedFilter)
-//                    .padding()
-//
-//                ForEach(0..<9) { tweet in
-//                    TweetCell()
+                ProfileHeaderView(user: user)
+                    .padding()
+                
+                ForEach(0..<5) { item in
+                    TweetCell()
+                        .padding()
                 }
-            }
+                }
+            .navigationTitle("batman")
         }
-}
-//                ForEach(viewModels.tweets(forFilter: selectedFilter)) {
-//                    tweet in TweetCell(tweet: tweet)
-//                        .padding()
-//            .navigationTitle(user.username)
-struct UserProfileView_Previews: PreviewProvider {
-    static var previews: some View {
-        UserProfileView()
     }
 }
-
