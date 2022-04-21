@@ -22,10 +22,7 @@ struct FeedView: View {
                 } .padding()
             }
             Button(action: {
-//                isShowingNewTweetView.toggle()
-                viewModel.signOut()
-                
-            }, label: {
+                isShowingNewTweetView.toggle() }, label: {
             Image("Tweet")
                 .resizable()
                 .renderingMode(.template)
