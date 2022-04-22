@@ -31,6 +31,7 @@ struct ContentView: View {
                     Text("Messages")
                     Image(systemName: "envelope")
                     }
+            }
                 .navigationBarTitle("Home")
                 .navigationBarItems(leading: Button(action: {
                     viewModel.signOut()
@@ -46,7 +47,6 @@ struct ContentView: View {
                 }))
                 .navigationBarTitleDisplayMode(.inline)
             }
-        }
             } else {
                 LoginView()
             }
