@@ -61,22 +61,23 @@ class ProfileViewModel: ObservableObject {
     func fetchUserTweets() {
         COLLECTION_TWEETS.whereField("uid", isEqualTo: user.id).getDocuments { snapshot, _ in
             guard let documents = snapshot?.documents else { return }
-            documents.forEach { document in
-                print("DEBUG: Doc data is \(document.data())")
-            }
+            self.userTweets = documents.map({ Tweet(dictionary: $0.data()) })
         }
     }
     func fetchLikedTweets() {
+        var tweets = [Tweet]()
         COLLECTION_USERS.document(user.id).collection("user-likes").getDocuments { snapshot, _ in
             guard let documents = snapshot?.documents else { return }
             let tweetIDs = documents.map({ $0.documentID })
             
-            tweetIds.forEach { id in
+            tweetIDs.forEach { id in
                 COLLECTION_TWEETS.document(id).getDocument { snapshot, _ in
                     guard let data = snapshot?.data() else { return }
                     let tweet = Tweet(dictionary: data)
-                    
-                    print("DEBUG: Liked tweet is \(Tweet)")
+                    tweets.append(tweet)
+                    guard tweets.count == tweetIDs.count else { return }
+                
+                    self.likedTweets = tweets
                 }
             }
         }
