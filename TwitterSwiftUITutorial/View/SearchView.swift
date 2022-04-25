@@ -17,7 +17,7 @@ struct SearchView: View {
         SearchBar(text: $searchText)
                 .padding()
             VStack(alignment: .leading) {
-                ForEach(viewModel.users) { user in
+                ForEach(searchText.isEmpty ? viewModel.users : viewModel.filteredusers(searchText)) { user in
                     HStack {
                         Spacer()}
                     
