@@ -20,8 +20,10 @@ struct SearchView: View {
                 ForEach(viewModel.users) { user in
                     HStack {
                         Spacer()}
-                    NavigationLink(destination: UserProfileView(user: user),
-                                   label: {
+                    
+                    NavigationLink(
+                        destination: LazyView(UserProfileView(user: user)),
+                        label: {
                         UserCell(user: user)
                     })
                 }
