@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct ConversationsView: View {
-    
+
     @State var isShowingNewMessageView = false
     @State var showChat = false
+    @State private var inSearchMode = false
+    @ObservedObject var viewModel = ConversationsViewModel()
+    
     var body: some View {
         ZStack(alignment: .bottomTrailing) {
 //            NavigationLink(destination: ChatView(),
@@ -19,15 +22,17 @@ struct ConversationsView: View {
             
             ScrollView {
                 VStack {
-                    ForEach(0..<9) { _ in
-                        ConversationCell()
-//                        NavigationLink(destination: ChatView(),
-//                                       label: {
-//                            ConversationCell()
-//                        })
+                    ForEach(viewModel.recentMessages) { message in
+                        NavigationLink(destination: ChatView(user: message.user),
+                                       label: {
+                            ConversationCell()
+                        })
                     }
                 } .padding()
             }
+            HStack {
+                Spacer()
+                
             Button(action: {self.isShowingNewMessageView.toggle()}, label: {
                 Image(systemName: "envelope")
                 .resizable()
@@ -42,6 +47,9 @@ struct ConversationsView: View {
         .sheet(isPresented: $isShowingNewMessageView, content: { NewMessageView(show: $isShowingNewMessageView, startChat: $showChat)
     })
 }
+        .navigationTitle("Messages")
+        .navigationBarTitleDisplayMode(.inline)
+        }
     }
 }
 struct ConversationsView_Previews: PreviewProvider {
