@@ -25,7 +25,7 @@ struct ConversationsView: View {
                     ForEach(viewModel.recentMessages) { message in
                         NavigationLink(destination: ChatView(user: message.user),
                                        label: {
-                            ConversationCell()
+                            ConversationCell(message: message)
                         })
                     }
                 } .padding()
