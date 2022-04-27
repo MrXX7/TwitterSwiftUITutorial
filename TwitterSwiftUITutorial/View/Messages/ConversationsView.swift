@@ -17,15 +17,16 @@ struct ConversationsView: View {
     var body: some View {
         ZStack(alignment: .bottomTrailing) {
             if let user = user {
-                NavigationLink(destination: ChatView(user: user),
+                NavigationLink(destination: LazyView(ChatView(user: user)),
                                isActive: $showChat,
-                               label: {})
+                               label: {} )
             }
             
             ScrollView {
                 VStack {
                     ForEach(viewModel.recentMessages) { message in
-                        NavigationLink(destination: ChatView(user: message.user),
+                        NavigationLink(
+                            destination: LazyView(ChatView(user: message.user)),
                                        label: {
                             ConversationCell(message: message)
                         })
