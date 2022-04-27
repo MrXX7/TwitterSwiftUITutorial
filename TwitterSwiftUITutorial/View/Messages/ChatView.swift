@@ -34,5 +34,6 @@ struct ChatView: View {
 }
     func sendMessage() {
         viewModel.sendMessage(messageText)
+        messageText = ""
     }
 }
